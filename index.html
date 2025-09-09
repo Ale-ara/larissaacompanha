@@ -3,86 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acompanhamento Larissa</title>
+<title>Acompanhamento Interativo Larissa</title>
 <style>
   /* Reset básico */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   body {
-    background: #f0f4f8;
+    background: #ffeef5;
     display: flex;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 20px 10px;
   }
 
   .container {
-    max-width: 700px;
+    max-width: 650px;
     width: 100%;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    padding: 30px;
+    background: #fff0f6;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 30px 20px;
   }
 
   h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #4b4b4b;
+    margin-bottom: 25px;
+    color: #d6336c;
+    font-size: 1.8em;
   }
 
   h2 {
-    margin: 20px 0 10px;
-    color: #3b82f6;
+    margin: 20px 0 15px;
+    color: #f06595;
+    font-size: 1.2em;
+    border-bottom: 2px solid #fcc2d7;
+    padding-bottom: 5px;
   }
 
   .day {
-    background: #e5f3ff;
-    margin-bottom: 12px;
+    background: #fff0f6;
+    margin-bottom: 15px;
     padding: 15px 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: transform 0.2s ease;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
   }
 
   .day:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
   }
 
   .day.completed {
-    background: #d1fae5;
-    border-left: 6px solid #10b981;
+    background: #ffe0f0;
+    border-left: 6px solid #f06595;
   }
 
   .day.upcoming {
-    background: #fef3c7;
-    border-left: 6px solid #f59e0b;
+    background: #fff5f9;
+    border-left: 6px solid #d6336c;
+  }
+
+  .day-marked {
+    background: #ffd6e8 !important;
+    border-left: 6px solid #f783ac !important;
   }
 
   .day-title {
-    font-weight: bold;
-    color: #1f2937;
+    font-weight: 600;
+    color: #6f2c5b;
+    font-size: 1em;
   }
 
   .day-desc {
     font-size: 0.9em;
-    color: #374151;
+    color: #4b2a4f;
+    margin-top: 5px;
   }
 
   .footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 0.85em;
-    color: #6b7280;
+    color: #9d5b76;
   }
 
+  .tracker {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .tracker button {
+    flex: 1;
+    padding: 6px;
+    border: none;
+    border-radius: 12px;
+    background: #f9c0d9;
+    color: #6f2c5b;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .tracker button.active {
+    background: #d6336c;
+    color: #fff;
+  }
+
+  /* Responsivo para celular */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px 15px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+
+    .day {
+      padding: 12px 15px;
+    }
+
+    .day-title {
+      font-size: 0.95em;
+    }
+
+    .day-desc {
+      font-size: 0.85em;
+    }
+
+    .tracker button {
+      font-size: 0.8em;
+      padding: 5px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -90,63 +156,62 @@
   <h1>🗓 Acompanhamento de Larissa</h1>
   
   <h2>Semana 1 (31/08 - 07/09)</h2>
-  <div class="day completed">
-    <div>
-      <div class="day-title">31/08 - Domingo</div>
-      <div class="day-desc">Pílula tomada às 15:10. Possível cólica leve e inchaço.</div>
-    </div>
-  </div>
-  <div class="day completed">
-    <div>
-      <div class="day-title">01/09 - Segunda</div>
-      <div class="day-desc">Inchaço abdominal, possível sensibilidade nos seios.</div>
-    </div>
-  </div>
-  <div class="day completed">
-    <div>
-      <div class="day-title">02/09 - Terça</div>
-      <div class="day-desc">Inchaço leve e observação de qualquer escape de sangue.</div>
-    </div>
-  </div>
-  <div class="day completed">
-    <div>
-      <div class="day-title">03/09 - Quarta</div>
-      <div class="day-desc">Sintomas leves podem continuar. Hidratação recomendada.</div>
-    </div>
-  </div>
-  <div class="day completed">
-    <div>
-      <div class="day-title">04/09 - Quinta</div>
-      <div class="day-desc">Inchaço deve começar a reduzir.</div>
-    </div>
-  </div>
-  <div class="day completed">
-    <div>
-      <div class="day-title">05/09 - Sexta</div>
-      <div class="day-desc">Observação de sinais: nada de anormal é esperado.</div>
-    </div>
-  </div>
-  <div class="day completed">
-    <div>
-      <div class="day-title">06/09 - Sábado</div>
-      <div class="day-desc">Inchaço pode reduzir ainda mais. Corpo se ajustando.</div>
-    </div>
-  </div>
-  <div class="day upcoming">
-    <div>
-      <div class="day-title">07/09 - Domingo</div>
-      <div class="day-desc">Fim da 1ª semana. Continuar observando sintomas.</div>
+
+  <div class="day completed" data-date="31/08">
+    <div class="day-title">31/08 - Domingo</div>
+    <div class="day-desc">Pílula tomada às 15:10. Possível cólica leve e inchaço.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
     </div>
   </div>
 
-  <h2>Semana 2 (08/09 - 14/09)</h2>
-  <div class="day upcoming">
-    <div>
-      <div class="day-title">08/09 - Segunda</div>
-      <div class="day-desc">Inchaço ainda presente. Ansiedade normal.</div>
+  <div class="day completed" data-date="01/09">
+    <div class="day-title">01/09 - Segunda</div>
+    <div class="day-desc">Inchaço abdominal, possível sensibilidade nos seios.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
     </div>
   </div>
-  <div class="day upcoming">
-    <div>
-      <div class="day-title">09/09 - Terça (Hoje)</div>
-      <div class="day-desc">Inchaço observado.
+
+  <div class="day upcoming" data-date="09/09">
+    <div class="day-title">09/09 - Terça (Hoje)</div>
+    <div class="day-desc">Inchaço observado. Possível exame de sangue a partir de amanhã.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    ⚠️ Clique nos sintomas que aconteceram em cada dia. Eles serão destacados automaticamente.  
+    Qualquer sintoma diferente ou atraso significativo da menstruação deve ser avaliado com teste ou médico.  
+    Mantém a calma, Larissa! 😊
+  </div>
+</div>
+
+<script>
+  // Seleção de todos os botões tracker
+  const trackers = document.querySelectorAll('.tracker button');
+
+  trackers.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active'); // Marca/desmarca o botão
+      const dayCard = btn.closest('.day');
+
+      // Se algum botão ativo, marca o card
+      const anyActive = Array.from(dayCard.querySelectorAll('button')).some(b => b.classList.contains('active'));
+      if (anyActive) {
+        dayCard.classList.add('day-marked');
+      } else {
+        dayCard.classList.remove('day-marked');
+      }
+    });
+  });
+</script>
+</body>
+</html>

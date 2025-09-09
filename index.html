@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acompanhamento Larissa</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+  }
+
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    padding: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b4b4b;
+  }
+
+  h2 {
+    margin: 20px 0 10px;
+    color: #3b82f6;
+  }
+
+  .day {
+    background: #e5f3ff;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+
+  .day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .day.completed {
+    background: #d1fae5;
+    border-left: 6px solid #10b981;
+  }
+
+  .day.upcoming {
+    background: #fef3c7;
+    border-left: 6px solid #f59e0b;
+  }
+
+  .day-title {
+    font-weight: bold;
+    color: #1f2937;
+  }
+
+  .day-desc {
+    font-size: 0.9em;
+    color: #374151;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #6b7280;
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🗓 Acompanhamento de Larissa</h1>
+  
+  <h2>Semana 1 (31/08 - 07/09)</h2>
+  <div class="day completed">
+    <div>
+      <div class="day-title">31/08 - Domingo</div>
+      <div class="day-desc">Pílula tomada às 15:10. Possível cólica leve e inchaço.</div>
+    </div>
+  </div>
+  <div class="day completed">
+    <div>
+      <div class="day-title">01/09 - Segunda</div>
+      <div class="day-desc">Inchaço abdominal, possível sensibilidade nos seios.</div>
+    </div>
+  </div>
+  <div class="day completed">
+    <div>
+      <div class="day-title">02/09 - Terça</div>
+      <div class="day-desc">Inchaço leve e observação de qualquer escape de sangue.</div>
+    </div>
+  </div>
+  <div class="day completed">
+    <div>
+      <div class="day-title">03/09 - Quarta</div>
+      <div class="day-desc">Sintomas leves podem continuar. Hidratação recomendada.</div>
+    </div>
+  </div>
+  <div class="day completed">
+    <div>
+      <div class="day-title">04/09 - Quinta</div>
+      <div class="day-desc">Inchaço deve começar a reduzir.</div>
+    </div>
+  </div>
+  <div class="day completed">
+    <div>
+      <div class="day-title">05/09 - Sexta</div>
+      <div class="day-desc">Observação de sinais: nada de anormal é esperado.</div>
+    </div>
+  </div>
+  <div class="day completed">
+    <div>
+      <div class="day-title">06/09 - Sábado</div>
+      <div class="day-desc">Inchaço pode reduzir ainda mais. Corpo se ajustando.</div>
+    </div>
+  </div>
+  <div class="day upcoming">
+    <div>
+      <div class="day-title">07/09 - Domingo</div>
+      <div class="day-desc">Fim da 1ª semana. Continuar observando sintomas.</div>
+    </div>
+  </div>
+
+  <h2>Semana 2 (08/09 - 14/09)</h2>
+  <div class="day upcoming">
+    <div>
+      <div class="day-title">08/09 - Segunda</div>
+      <div class="day-desc">Inchaço ainda presente. Ansiedade normal.</div>
+    </div>
+  </div>
+  <div class="day upcoming">
+    <div>
+      <div class="day-title">09/09 - Terça (Hoje)</div>
+      <div class="day-desc">Inchaço observado.

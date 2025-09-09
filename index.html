@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Acompanhamento Interativo Larissa</title>
 <style>
-  /* Reset básico */
   * {
     margin: 0;
     padding: 0;
@@ -118,32 +117,25 @@
     color: #fff;
   }
 
-  /* Responsivo para celular */
   @media (max-width: 480px) {
     .container {
       padding: 20px 15px;
     }
-
     h1 {
       font-size: 1.5em;
     }
-
     h2 {
       font-size: 1.1em;
     }
-
     .day {
       padding: 12px 15px;
     }
-
     .day-title {
       font-size: 0.95em;
     }
-
     .day-desc {
       font-size: 0.85em;
     }
-
     .tracker button {
       font-size: 0.8em;
       padding: 5px;
@@ -177,6 +169,78 @@
     </div>
   </div>
 
+  <div class="day completed" data-date="02/09">
+    <div class="day-title">02/09 - Terça</div>
+    <div class="day-desc">Inchaço leve e observação de qualquer escape de sangue.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day completed" data-date="03/09">
+    <div class="day-title">03/09 - Quarta</div>
+    <div class="day-desc">Sintomas leves podem continuar. Hidratação recomendada.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day completed" data-date="04/09">
+    <div class="day-title">04/09 - Quinta</div>
+    <div class="day-desc">Inchaço deve começar a reduzir.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day completed" data-date="05/09">
+    <div class="day-title">05/09 - Sexta</div>
+    <div class="day-desc">Observação de sinais: nada de anormal é esperado.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day completed" data-date="06/09">
+    <div class="day-title">06/09 - Sábado</div>
+    <div class="day-desc">Inchaço pode reduzir ainda mais. Corpo se ajustando.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day upcoming" data-date="07/09">
+    <div class="day-title">07/09 - Domingo</div>
+    <div class="day-desc">Fim da 1ª semana. Continuar observando sintomas.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <h2>Semana 2 (08/09 - 14/09)</h2>
+
+  <div class="day upcoming" data-date="08/09">
+    <div class="day-title">08/09 - Segunda</div>
+    <div class="day-desc">Inchaço ainda presente. Ansiedade normal.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
   <div class="day upcoming" data-date="09/09">
     <div class="day-title">09/09 - Terça (Hoje)</div>
     <div class="day-desc">Inchaço observado. Possível exame de sangue a partir de amanhã.</div>
@@ -187,9 +251,62 @@
     </div>
   </div>
 
+  <div class="day upcoming" data-date="10/09">
+    <div class="day-title">10/09 - Quarta</div>
+    <div class="day-desc">Exame de sangue (beta-hCG) confiável para tranquilizar.</div>
+      <div class="day upcoming" data-date="10/09">
+    <div class="day-title">10/09 - Quarta</div>
+    <div class="day-desc">Exame de sangue (beta-hCG) confiável para tranquilizar.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day upcoming" data-date="11/09">
+    <div class="day-title">11/09 - Quinta</div>
+    <div class="day-desc">Início do período confiável para exames de sangue. Monitorar sinais.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day upcoming" data-date="12/09">
+    <div class="day-title">12/09 - Sexta</div>
+    <div class="day-desc">Continuação do acompanhamento. Sintomas devem diminuir.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day upcoming" data-date="13/09">
+    <div class="day-title">13/09 - Sábado</div>
+    <div class="day-desc">Teste de farmácia confiável a partir de hoje. Resultado negativo indica tranquilidade.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
+  <div class="day upcoming" data-date="14/09">
+    <div class="day-title">14/09 - Domingo</div>
+    <div class="day-desc">Observação de qualquer sangramento. Inchaço deve desaparecer.</div>
+    <div class="tracker">
+      <button data-type="inchaco">Inchaço</button>
+      <button data-type="colica">Cólica</button>
+      <button data-type="sangramento">Sangramento</button>
+    </div>
+  </div>
+
   <div class="footer">
-    ⚠️ Clique nos sintomas que aconteceram em cada dia. Eles serão destacados automaticamente.  
-    Qualquer sintoma diferente ou atraso significativo da menstruação deve ser avaliado com teste ou médico.  
+    ⚠️ Clique nos sintomas que aconteceram em cada dia. Eles serão destacados automaticamente.<br>
+    Qualquer sintoma diferente ou atraso significativo da menstruação deve ser avaliado com teste ou médico.<br>
     Mantém a calma, Larissa! 😊
   </div>
 </div>
@@ -215,3 +332,4 @@
 </script>
 </body>
 </html>
+
